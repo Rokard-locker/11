@@ -1,14 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>03</title>
-</head>
+            - name: Marp HTML
+  # You may pin to the exact commit or the version.
+  # uses: manattan/marp-cli-action@51c9aff2cf6ee050514192609e05afaaf4e8327e
+  uses: manattan/marp-cli-action@v0.0.2
+  with:
+    # Marp CLI configuraiton file path. If not specified, the configuration file in the repository root directory will be automatically detected.
+See [Marp CLI document](https://github.com/marp-team/marp-cli/blob/master/README.md#configuration-file).
+
+    config-file: # optional
+    # Whether to generate HTML.
+
+    generate-html: # optional, default is true
+    # Whether to generate PDF.
+
+    generate-pdf: # optional, default is true
+    # Whether to generate PowerPoint.
+
+    generate-pptx: # optional, default is false
+    # Format of the title slide image. Use the input `png` or `jpeg` to generate an image of the title slide. Omit if you don't want to generate.
+See [Marp CLI document](https://github.com/marp-team/marp-cli/blob/master/README.md#title-slide---image).
+
+    generate-image: # optional
+    # Format of the slide deck. Use the input `png` or `jpeg` to generate images of the slide deck. Omit if you don't want to generate.
+See [Marp CLI document](https://github.com/marp-team/marp-cli/blob/master/README.md#multiple-images---images).
+
+    generate-images: # optional
+ </head>
 <body>
     <h1>1.mark</h1>
     <p><b>write</b>n 2010, another research team at the University of Michigan found a 40% decline among students in every definition of empathy among college students, as compared to their</p>
     <li>The list of positive and negative repercussions of increased</li>
     
 </body>
-</html>
+</html>         
