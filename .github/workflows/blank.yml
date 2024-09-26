@@ -1,56 +1,14 @@
 <!DOCTYPE html>
-
-
-
-<html>
+<html lang="en">
 <head>
-  <style>
-
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: lightblue;
-  }
-  
-  h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-  }
-  
-  p {
-      font-size: 18px;
-  }
-  
-  ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-  }
-  
-  li {
-      margin-bottom: 10px;
-  }
-  
-  img {
-      width: 300px;
-      height: auto;
-  }
-
-
-  </style>
-    <title>Simple Website</title>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
 </head>
 <body>
-    <h1>Welcome to My 452 Website </h1>
-  <h1>My name is Chuan</h1>
-    <p>This is a simple example of an HTML page with basic elements.</p>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
+    <h1>1.mark</h1>
+    <p><b>write</b>n 2010, another research team at the University of Michigan found a 40% decline among students in every definition of empathy among college students, as compared to their</p>
+    <li>The list of positive and negative repercussions of increased</li>
     
-    <img src="http://dingyue.ws.126.net/2022/0630/c3fff262g00re9sok00k0d200ei00deg00id00gy.gif" alt="Image">
 </body>
 </html>
