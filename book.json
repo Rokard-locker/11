@@ -1,0 +1,17 @@
+[
+    {
+        "author": "Robert C. Martin",
+        "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+        "description": "This book is a must-read for any programmer who wants to write clean, maintainable code. It provides practical advice on how to write code that is easy to read, understand, and maintain.",
+        "price": "49.99",
+        "publisher": "Prentice Hall"
+    },
+    {
+        "author": "Andy Hunt and Dave Thomas",
+        "title": "The Pragmatic Programmer",
+        "description": "This book is a collection of best practices and practical advice for software developers. It covers topics such as coding standards, debugging, testing, and collaboration.",
+        "price": "44.95",
+        "publisher": "Addison-Wesley Professional"
+    }
+    
+]
