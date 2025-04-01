@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Computer Bookstore - Rokard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>My Computer Bookstore</h1>
+    <div id="book-list"></div>
+
+    <script>
+        fetch('https://github.com/Rokard-locker/11/upload/main/book.json')
+            .then(response => response.json())
+            .then(data => {
+                const bookList = document.getElementById('book-list');
+                data.forEach(book => {
+                    const bookDiv = document.createElement('div');
+                    bookDiv.classList.add('book');
+
+                    const title = document.createElement('h2');
+                    title.textContent = book.title;
+
+                    const author = document.createElement('p');
+                    author.textContent = `by ${book.author}`;
+
+                    const description = document.createElement('p');
+                    description.textContent = book.description;
+
+                    const price = document.createElement('p');
+                    price.textContent = `Price: $${book.price}`;
+
+                    const publisher = document.createElement('p');
+                    publisher.textContent = `Published by ${book.publisher}`;
+
+                    bookDiv.appendChild(title);
+                    bookDiv.appendChild(author);
+                    bookDiv.appendChild(description);
+                    bookDiv.appendChild(price);
+                    bookDiv.appendChild(publisher);
+
+                    bookList.appendChild(bookDiv);
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>
