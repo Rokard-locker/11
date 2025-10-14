@@ -1,0 +1,126 @@
+{
+    "courses": [
+      {
+        "id": "C001",
+        "name": "Web Development Fundamentals",
+        "description": "Learn HTML, CSS, JavaScript and build responsive websites from scratch with hands-on projects.",
+        "duration": "12 weeks",
+        "assessment": "Practical project (70%) and written test (30%)",
+        "project": "Build a responsive portfolio website with contact form"
+      },
+      {
+        "id": "C002",
+        "name": "Python Programming",
+        "description": "Master Python programming from basics to advanced concepts including OOP and data structures.",
+        "duration": "10 weeks",
+        "assessment": "Coding assignments (60%) and final project (40%)",
+        "project": "Develop a data analysis application using pandas"
+      },
+      {
+        "id": "C003",
+        "name": "Cybersecurity Essentials",
+        "description": "Understand security principles, threat detection, and protection strategies for modern systems.",
+        "duration": "8 weeks",
+        "assessment": "Security audit report (50%) and practical testing (50%)",
+        "project": "Conduct vulnerability assessment on test network"
+      },
+      {
+        "id": "C004",
+        "name": "Cloud Computing with AWS",
+        "description": "Learn AWS services, cloud architecture, and deployment strategies for scalable applications.",
+        "duration": "14 weeks",
+        "assessment": "Cloud architecture design (40%) and implementation (60%)",
+        "project": "Deploy and scale a web application on AWS"
+      },
+      {
+        "id": "C005",
+        "name": "Data Science Fundamentals",
+        "description": "Introduction to data analysis, visualization, statistics, and machine learning concepts.",
+        "duration": "16 weeks",
+        "assessment": "Data analysis project (50%) and research report (50%)",
+        "project": "Analyze and visualize real-world business dataset"
+      }
+    ],
+    "resources": [
+      {
+        "id": "R001",
+        "unitNumber": "ICTWEB431",
+        "name": "Web Development Resource Kit",
+        "description": "Complete toolkit including HTML/CSS templates, JavaScript examples, and responsive design guides for effective web development training.",
+        "price": 299,
+        "image": "images/web-kit.jpg"
+      },
+      {
+        "id": "R002",
+        "unitNumber": "ICTPRG302",
+        "name": "Python Programming Kit",
+        "description": "Comprehensive Python learning materials with coding exercises, project templates, and debugging guides for programming education.",
+        "price": 249,
+        "image": "images/python-kit.jpg"
+      },
+      {
+        "id": "R003",
+        "unitNumber": "ICTICT451",
+        "name": "Cybersecurity Training Kit",
+        "description": "Security tools, vulnerability scenarios, and protection strategies for comprehensive cybersecurity training programs.",
+        "price": 399,
+        "image": "images/security-kit.jpg"
+      },
+      {
+        "id": "R004",
+        "unitNumber": "ICTCLD301",
+        "name": "Cloud Computing Resource Pack",
+        "description": "AWS and Azure deployment guides, cloud architecture templates, and best practices for cloud computing education.",
+        "price": 349,
+        "image": "images/cloud-kit.jpg"
+      },
+      {
+        "id": "R005",
+        "unitNumber": "ICTDBS505",
+        "name": "Database Design Toolkit",
+        "description": "Database modeling tools, SQL query examples, and design patterns for effective database management training.",
+        "price": 279,
+        "image": "images/database-kit.jpg"
+      },
+      {
+        "id": "R006",
+        "unitNumber": "ICTICT443",
+        "name": "Networking Fundamentals Kit",
+        "description": "Network configuration guides, troubleshooting scenarios, and protocol examples for networking courses.",
+        "price": 329,
+        "image": "images/networking-kit.jpg"
+      },
+      {
+        "id": "R007",
+        "unitNumber": "ICTICT449",
+        "name": "Mobile App Development Pack",
+        "description": "iOS and Android development tools, UI templates, and deployment guides for mobile application courses.",
+        "price": 379,
+        "image": "images/mobile-kit.jpg"
+      },
+      {
+        "id": "R008",
+        "unitNumber": "ICTICT452",
+        "name": "AI and Machine Learning Kit",
+        "description": "Machine learning algorithms, dataset examples, and AI concept explanations for artificial intelligence training.",
+        "price": 449,
+        "image": "images/ai-kit.jpg"
+      },
+      {
+        "id": "R009",
+        "unitNumber": "ICTICT450",
+        "name": "DevOps Methodology Kit",
+        "description": "CI/CD pipeline examples, automation scripts, and deployment strategies for DevOps methodology training.",
+        "price": 399,
+        "image": "images/devops-kit.jpg"
+      },
+      {
+        "id": "R010",
+        "unitNumber": "ICTICT448",
+        "name": "IT Project Management Pack",
+        "description": "Project planning templates, methodology guides, and management tools for IT project management courses.",
+        "price": 299,
+        "image": "images/project-kit.jpg"
+      }
+    ]
+  }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Rokard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1><a href="index.html">Rokard RTO</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order-management.html">Orders</a></li>
+                <li id="auth-links">
+                    <!-- Auth links will be populated by JavaScript -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Your Shopping Cart</h2>
+            <p style="text-align: center; color: white; margin-bottom: 2rem;">
+                Review your selected training resource kits before checkout
+            </p>
+            
+            <div id="error-message" style="display: none; margin-bottom: 2rem;"></div>
+            
+            <div id="cart-items">
+                <!-- Cart items will be populated by JavaScript -->
+            </div>
+            
+            <div id="cart-total" class="cart-total">
+                <!-- Total will be populated by JavaScript -->
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <button onclick="checkout001()" class="btn-primary" 
+                        style="padding: 1.2rem 3rem; font-size: 1.2rem; margin-right: 1rem;">
+                    Proceed to Checkout
+                </button>
+                <a href="index.html" class="btn-outline" style="padding: 1.2rem 2rem; font-size: 1.2rem;">
+                    Continue Shopping
+                </a>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.9); padding: 2rem; border-radius: 10px; margin-top: 3rem;">
+                <h3 style="color: #2c3e50; text-align: center;">Need Help?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; text-align: center;">
+                    <div>
+                        <h4 style="color: #3498db;">📞 Contact Support</h4>
+                        <p>Phone: (03) 1234 5678</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #3498db;">✉️ Email Us</h4>
+                        <p>support@rokard.edu.au</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #3498db;">🕒 Business Hours</h4>
+                        <p>Mon-Fri: 9AM-5PM AEST</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rokard Registered Training Organization. RTO ID: 12345</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // 临时解决方案：如果没有登录用户，创建一个演示用户
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentUser = sessionStorage.getItem('currentUser');
+            if (!currentUser) {
+                // 临时设置一个演示用户（仅用于测试）
+                sessionStorage.setItem('currentUser', 'demo-user');
+                console.log('Demo user set for order confirmation page');
+            }
+            
+            // 更新导航栏显示
+            const authLinks = document.getElementById('auth-links');
+            if (authLinks) {
+                authLinks.innerHTML = `
+                    <span style="color: #2c3e50; font-weight: 600;">Welcome, ${sessionStorage.getItem('currentUser')}</span>
+                    <a href="order-management.html" class="btn-outline">Orders</a>
+                    <button onclick="logout001()" class="btn-primary">Logout</button>
+                `;
+            }
+        });
+        </script>
+</body>
+</html>

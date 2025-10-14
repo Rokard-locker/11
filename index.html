@@ -3,47 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Computer Bookstore - Rokard</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Rokard - IT Training & Resources</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Computer Bookstore</h1>
-    <div id="book-list"></div>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1><a href="index.html">Rokard RTO</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="order-management.html">Orders</a></li>
+                <li id="auth-links">
+                    <!-- Auth links will be populated by JavaScript -->
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <script>
-        fetch('https://github.com/Rokard-locker/11/upload/main/book.json')
-            .then(response => response.json())
-            .then(data => {
-                const bookList = document.getElementById('book-list');
-                data.forEach(book => {
-                    const bookDiv = document.createElement('div');
-                    bookDiv.classList.add('book');
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Advance Your IT Career with Rokard</h2>
+                <p>Quality training courses and comprehensive resource kits for aspiring IT professionals and RTOs</p>
+                <div style="margin-top: 2rem;">
+                    <a href="#courses" class="btn-primary" style="margin-right: 1rem;">View Courses</a>
+                    <a href="#resources" class="btn-outline">Browse Resources</a>
+                </div>
+            </div>
+        </section>
 
-                    const title = document.createElement('h2');
-                    title.textContent = book.title;
+        <section id="courses">
+            <h3>Our IT Training Courses</h3>
+            <div id="courses-container" class="grid-container">
+                <!-- Courses will be loaded dynamically from JSON -->
+            </div>
+        </section>
 
-                    const author = document.createElement('p');
-                    author.textContent = `by ${book.author}`;
+        <section id="resources">
+            <h3>Training Resource Kits</h3>
+            <p style="text-align: center; color: white; margin-bottom: 2rem; font-size: 1.1rem;">
+                Comprehensive resource kits for RTOs - Each kit includes training materials, assessments, and support resources
+            </p>
+            <div id="resources-container" class="grid-container">
+                <!-- Resources will be loaded dynamically from JSON -->
+            </div>
+        </section>
 
-                    const description = document.createElement('p');
-                    description.textContent = book.description;
+        <section style="background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 15px; text-align: center;">
+            <h3 style="color: #2c3e50;">Why Choose Rokard?</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <div>
+                    <h4 style="color: #3498db;">✓ Industry Experts</h4>
+                    <p>Learn from professionals with real-world experience</p>
+                </div>
+                <div>
+                    <h4 style="color: #3498db;">✓ Practical Skills</h4>
+                    <p>Hands-on projects and real-world scenarios</p>
+                </div>
+                <div>
+                    <h4 style="color: #3498db;">✓ Flexible Learning</h4>
+                    <p>Study at your own pace with comprehensive materials</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                    const price = document.createElement('p');
-                    price.textContent = `Price: $${book.price}`;
+    <footer>
+        <p>&copy; 2024 Rokard Registered Training Organization. RTO ID: 12345</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">Address: 123 IT Street, Melbourne VIC 3000 | Phone: (03) 1234 5678 | Email: info@rokard.edu.au</p>
+    </footer>
 
-                    const publisher = document.createElement('p');
-                    publisher.textContent = `Published by ${book.publisher}`;
-
-                    bookDiv.appendChild(title);
-                    bookDiv.appendChild(author);
-                    bookDiv.appendChild(description);
-                    bookDiv.appendChild(price);
-                    bookDiv.appendChild(publisher);
-
-                    bookList.appendChild(bookDiv);
-                });
-            })
-            .catch(error => console.error('Error fetching data:', error));
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
